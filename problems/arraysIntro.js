@@ -5,8 +5,10 @@
  * @returns {string[]}
  */
 function addFruitToEnd(fruits, fruit) {
- fruits.push(fruit)
- return fruits
+fruits.push(fruit);
+return fruits;
+
+
 }
 
 /**
@@ -17,8 +19,8 @@ function addFruitToEnd(fruits, fruit) {
  * @returns {string[]}
  */
 function addFruitToFront(fruits, fruit) {
-  fruits.unshift(fruit)
-  return fruits
+fruits.unshift(fruit);
+return fruits;
 }
 
 /**
@@ -27,8 +29,8 @@ function addFruitToFront(fruits, fruit) {
  * @returns {string[]}
  */
 function removeLast(fruits) {
-fruits.pop()
-return fruits
+fruits.pop();
+return fruits;
 }
 
 /**
@@ -37,7 +39,8 @@ return fruits
  * @returns {string} The fruit that was removed
  */
 function removeLastandReturnLast(fruits) {
-  return fruits.pop()
+return fruits.pop();
+
   
 }
 
@@ -47,7 +50,8 @@ function removeLastandReturnLast(fruits) {
  * @returns {number}
  */
 function arrayLength(array) {
-  return array.length
+  return array.length;
+
 }
 
 /**
@@ -56,8 +60,8 @@ function arrayLength(array) {
  * @returns {string[]}
  */
 function removeFirst(fruits) {
-  fruits.shift()
-  return fruits
+fruits.shift();
+return fruits;
 }
 
 /**
@@ -66,8 +70,7 @@ function removeFirst(fruits) {
  * @returns {string} The fruit that was removed
  */
 function removeFirstandReturnFirst(fruits) {
- let firstFruits = fruits.shift()
- return firstFruits
+return fruits.shift();
   
 }
 
@@ -77,7 +80,7 @@ function removeFirstandReturnFirst(fruits) {
  * @returns {string}
  */
 function arrayToString(fruits) {
-  return fruits.join('$')
+  return fruits.join('$');
   
 }
 
@@ -91,14 +94,13 @@ function arrayToString(fruits) {
  */
 function largerArray(array1, array2) {
   if (array1.length > array2.length) {
-  return array1 
-   } else if (array1.length < array2.length) {
-    return array2 
-
-    } else {
-      return "They are the same size"
-    }
+    return  array1;
+  } else if (array1.length < array2.length) {
+     return array2;
+  } else {
+    return "They are the same size";
   }
+}
 
 
 /**
@@ -108,13 +110,16 @@ function largerArray(array1, array2) {
  * @returns {*|Array}
  */
 function middleElement(array) {
-  if (array.length % 2 === 1) {
-    return array[(array.length-1) / 2]
-    
-  } else {
-    return [array[(array.length / 2) - 1], array[array.length / 2 ]]
-  } 
-}
+  let a = [array[(array.length / 2) - 1], array[(array.length / 2)]]
+
+  if((array.length % 2) === 1) {
+    return array[(array.length - 1) / 2]
+  }
+  else{
+    return a
+  }
+} 
+
 
 /**
  * Takes in an array and returns the last element without altering or mutating the array
@@ -122,7 +127,7 @@ function middleElement(array) {
  * @returns {*}
  */
 function lastElementIndexing(array) {
-  return array[array.length - 1] 
+ return array[array.length -1];
 }
 
 
@@ -133,7 +138,8 @@ function lastElementIndexing(array) {
  * @returns {*}
  */
 function firstElementIndexing(array) {
-  return array[0]
+return array[0];
+
 }
 
 
